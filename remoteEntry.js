@@ -60247,7 +60247,7 @@ __webpack_require__.d(exports, {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "http://localhost:3001/";
+/******/ 		__webpack_require__.p = "";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/consumes */
