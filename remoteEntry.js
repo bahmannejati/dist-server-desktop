@@ -60247,7 +60247,7 @@ __webpack_require__.d(exports, {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
+/******/ 		__webpack_require__.p = "https://bahmannejati.github.io/dist-web-desktop/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/consumes */
