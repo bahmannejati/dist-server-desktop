@@ -30593,10 +30593,10 @@ function withRefForwarded(WrappedComponent) {
 
 /***/ }),
 
-/***/ "./src/Landing/Landing.desktop.js":
-/*!****************************************!*\
-  !*** ./src/Landing/Landing.desktop.js ***!
-  \****************************************/
+/***/ "./src/Landing/Landing.mobile.js":
+/*!***************************************!*\
+  !*** ./src/Landing/Landing.mobile.js ***!
+  \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -30628,8 +30628,8 @@ function Landing({
   const verticalName = (0,_meta__WEBPACK_IMPORTED_MODULE_2__.default)().name;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", {
     ref: passedRef
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "desktop version"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "our vertical name is :", verticalName, "the counter is :", counter, "this is a khesht button :", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_khesht_react__WEBPACK_IMPORTED_MODULE_1__.Button, {
-    className: "v1-desktop-button"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "mobile version"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "our vertical name is :", verticalName, "the counter is :", counter, "this is a khesht button :", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_khesht_react__WEBPACK_IMPORTED_MODULE_1__.Button, {
+    className: "v1-mobile-button"
   }, "click me, please!"));
 }
 
@@ -30652,8 +30652,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_background_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/background.jpg */ "./src/assets/background.jpg");
 /* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/logo.svg */ "./src/assets/logo.svg");
-/* harmony import */ var _Landing__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Landing */ "./src/Landing/Landing.desktop.js");
-/* harmony import */ var _Landing_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Landing.style */ "./src/Landing/Landing.style.desktop.scss");
+/* harmony import */ var _Landing__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Landing */ "./src/Landing/Landing.mobile.js");
+/* harmony import */ var _Landing_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Landing.style */ "./src/Landing/Landing.style.mobile.scss");
 
 
 
@@ -30667,9 +30667,7 @@ function Landing(props) {
       color: 'white',
       backgroundImage: `url(${_assets_background_jpg__WEBPACK_IMPORTED_MODULE_1__.default})`
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
-    fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, "Loading...")
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LazyComponent, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "the wrapper for landing with serving mode :"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LazyComponent, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "the wrapper for landing with serving mode :"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: _assets_logo_svg__WEBPACK_IMPORTED_MODULE_2__.default
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Landing__WEBPACK_IMPORTED_MODULE_3__.default, props));
 }
@@ -30720,10 +30718,10 @@ function meta() {
 
 /***/ }),
 
-/***/ "./src/Landing/Landing.style.desktop.scss":
-/*!************************************************!*\
-  !*** ./src/Landing/Landing.style.desktop.scss ***!
-  \************************************************/
+/***/ "./src/Landing/Landing.style.mobile.scss":
+/*!***********************************************!*\
+  !*** ./src/Landing/Landing.style.mobile.scss ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -60273,7 +60271,7 @@ __webpack_require__.d(exports, {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "https://bahmannejati.github.io/dist-web-desktop/";
+/******/ 		__webpack_require__.p = "https://bahmannejati.github.io/dist-web-mobile/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/consumes */
