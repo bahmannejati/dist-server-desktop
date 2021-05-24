@@ -30754,11 +30754,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var react_imported_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-imported-component */ "./node_modules/react-imported-component/dist/es2015/entrypoints/index.js");
+/* harmony import */ var react_imported_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-imported-component */ "./node_modules/react-imported-component/dist/es2015/ui/HOC.js");
+/* harmony import */ var react_imported_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-imported-component */ "./node_modules/react-imported-component/dist/es2015/ui/LazyBoundary.js");
 var importedWrapper = __webpack_require__(/*! react-imported-component/wrapper */ "./node_modules/react-imported-component/wrapper.js");
 
+ // export default importedComponent(() => import(/* webpackChunkName: "Lazy" */ './Lazy'), {
+//   LoadingComponent: 
+// });
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_imported_component__WEBPACK_IMPORTED_MODULE_0__.default)(() => importedWrapper("imported_-njieu2_component", Promise.resolve(/*! import() | Lazy */).then(__webpack_require__.bind(__webpack_require__, /*! ./Lazy */ "./src/Lazy/Lazy.js")))));
+const Component = (0,react_imported_component__WEBPACK_IMPORTED_MODULE_0__.lazy)(() => importedWrapper("imported_-njieu2_component", Promise.resolve(/*! import() | Lazy */).then(__webpack_require__.bind(__webpack_require__, /*! ./Lazy */ "./src/Lazy/Lazy.js"))));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ServerSideFriendly = () => /*#__PURE__*/React.createElement(react_imported_component__WEBPACK_IMPORTED_MODULE_1__.LazyBoundary, null, ' ', /*#__PURE__*/React.createElement(Component, null)));
 
 /***/ }),
 
@@ -56801,179 +56806,6 @@ var setConfiguration = function (config) {
 
 /***/ }),
 
-/***/ "./node_modules/react-imported-component/dist/es2015/configuration/configuration.js":
-/*!******************************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/configuration/configuration.js ***!
-  \******************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "configure": () => /* binding */ configure
-/* harmony export */ });
-/**
- * provides react-imported-component configuration
- * @param {ImportedConfiguration} config
- */
-var configure = function (config) { return config; };
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/entrypoints/index.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/entrypoints/index.js ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "printDrainHydrateMarks": () => /* reexport safe */ _loadable_marks__WEBPACK_IMPORTED_MODULE_0__.printDrainHydrateMarks,
-/* harmony export */   "drainHydrateMarks": () => /* reexport safe */ _loadable_marks__WEBPACK_IMPORTED_MODULE_0__.drainHydrateMarks,
-/* harmony export */   "rehydrateMarks": () => /* reexport safe */ _loadable_marks__WEBPACK_IMPORTED_MODULE_0__.rehydrateMarks,
-/* harmony export */   "waitForMarks": () => /* reexport safe */ _loadable_marks__WEBPACK_IMPORTED_MODULE_0__.waitForMarks,
-/* harmony export */   "whenComponentsReady": () => /* reexport safe */ _loadable_pending__WEBPACK_IMPORTED_MODULE_1__.done,
-/* harmony export */   "dryRender": () => /* reexport safe */ _loadable_loadable__WEBPACK_IMPORTED_MODULE_2__.dryRender,
-/* harmony export */   "assignImportedComponents": () => /* reexport safe */ _loadable_assignImportedComponents__WEBPACK_IMPORTED_MODULE_3__.assignImportedComponents,
-/* harmony export */   "loadByChunkname": () => /* reexport safe */ _loadable_loadByChunkName__WEBPACK_IMPORTED_MODULE_4__.loadByChunkname,
-/* harmony export */   "ComponentLoader": () => /* reexport safe */ _ui_Component__WEBPACK_IMPORTED_MODULE_5__.ImportedComponent,
-/* harmony export */   "ImportedComponent": () => /* reexport safe */ _ui_Component__WEBPACK_IMPORTED_MODULE_5__.ImportedComponent,
-/* harmony export */   "ImportedModule": () => /* reexport safe */ _ui_Module__WEBPACK_IMPORTED_MODULE_6__.ImportedModule,
-/* harmony export */   "loadableResource": () => /* reexport safe */ _loadable_loadable__WEBPACK_IMPORTED_MODULE_2__.getLoadable,
-/* harmony export */   "ImportedStream": () => /* reexport safe */ _ui_context__WEBPACK_IMPORTED_MODULE_7__.ImportedStream,
-/* harmony export */   "setConfiguration": () => /* reexport safe */ _configuration_config__WEBPACK_IMPORTED_MODULE_8__.setConfiguration,
-/* harmony export */   "imported": () => /* reexport safe */ _ui_HOC__WEBPACK_IMPORTED_MODULE_9__.default,
-/* harmony export */   "importedModule": () => /* reexport safe */ _ui_Module__WEBPACK_IMPORTED_MODULE_6__.importedModule,
-/* harmony export */   "lazy": () => /* reexport safe */ _ui_HOC__WEBPACK_IMPORTED_MODULE_9__.lazy,
-/* harmony export */   "LazyBoundary": () => /* reexport safe */ _ui_LazyBoundary__WEBPACK_IMPORTED_MODULE_10__.LazyBoundary,
-/* harmony export */   "ImportedController": () => /* reexport safe */ _ui_ImportedController__WEBPACK_IMPORTED_MODULE_11__.ImportedController,
-/* harmony export */   "useIsClientPhase": () => /* reexport safe */ _utils_useClientPhase__WEBPACK_IMPORTED_MODULE_12__.useIsClientPhase,
-/* harmony export */   "remapImports": () => /* reexport safe */ _utils_helpers__WEBPACK_IMPORTED_MODULE_13__.remapImports,
-/* harmony export */   "useLoadable": () => /* reexport safe */ _ui_useImported__WEBPACK_IMPORTED_MODULE_14__.useLoadable,
-/* harmony export */   "useImported": () => /* reexport safe */ _ui_useImported__WEBPACK_IMPORTED_MODULE_14__.useImported,
-/* harmony export */   "useLazy": () => /* reexport safe */ _ui_useImported__WEBPACK_IMPORTED_MODULE_14__.useLazy,
-/* harmony export */   "addPreloader": () => /* reexport safe */ _loadable_preloaders__WEBPACK_IMPORTED_MODULE_15__.addPreloader,
-/* harmony export */   "getMarkedChunks": () => /* reexport safe */ _loadable_markerMapper__WEBPACK_IMPORTED_MODULE_16__.getMarkedChunks,
-/* harmony export */   "getMarkedFileNames": () => /* reexport safe */ _loadable_markerMapper__WEBPACK_IMPORTED_MODULE_16__.getMarkedFileNames,
-/* harmony export */   "clearImportedCache": () => /* reexport safe */ _loadable_loadable__WEBPACK_IMPORTED_MODULE_2__.clearImportedCache,
-/* harmony export */   "configure": () => /* reexport safe */ _configuration_configuration__WEBPACK_IMPORTED_MODULE_17__.configure,
-/* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ });
-/* harmony import */ var _configuration_config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../configuration/config */ "./node_modules/react-imported-component/dist/es2015/configuration/config.js");
-/* harmony import */ var _configuration_configuration__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../configuration/configuration */ "./node_modules/react-imported-component/dist/es2015/configuration/configuration.js");
-/* harmony import */ var _loadable_assignImportedComponents__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../loadable/assignImportedComponents */ "./node_modules/react-imported-component/dist/es2015/loadable/assignImportedComponents.js");
-/* harmony import */ var _loadable_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../loadable/loadable */ "./node_modules/react-imported-component/dist/es2015/loadable/loadable.js");
-/* harmony import */ var _loadable_loadByChunkName__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../loadable/loadByChunkName */ "./node_modules/react-imported-component/dist/es2015/loadable/loadByChunkName.js");
-/* harmony import */ var _loadable_markerMapper__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../loadable/markerMapper */ "./node_modules/react-imported-component/dist/es2015/loadable/markerMapper.js");
-/* harmony import */ var _loadable_marks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../loadable/marks */ "./node_modules/react-imported-component/dist/es2015/loadable/marks.js");
-/* harmony import */ var _loadable_pending__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../loadable/pending */ "./node_modules/react-imported-component/dist/es2015/loadable/pending.js");
-/* harmony import */ var _loadable_preloaders__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../loadable/preloaders */ "./node_modules/react-imported-component/dist/es2015/loadable/preloaders.js");
-/* harmony import */ var _ui_Component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../ui/Component */ "./node_modules/react-imported-component/dist/es2015/ui/Component.js");
-/* harmony import */ var _ui_context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ui/context */ "./node_modules/react-imported-component/dist/es2015/ui/context.js");
-/* harmony import */ var _ui_HOC__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../ui/HOC */ "./node_modules/react-imported-component/dist/es2015/ui/HOC.js");
-/* harmony import */ var _ui_ImportedController__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../ui/ImportedController */ "./node_modules/react-imported-component/dist/es2015/ui/ImportedController.js");
-/* harmony import */ var _ui_LazyBoundary__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../ui/LazyBoundary */ "./node_modules/react-imported-component/dist/es2015/ui/LazyBoundary.js");
-/* harmony import */ var _ui_Module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../ui/Module */ "./node_modules/react-imported-component/dist/es2015/ui/Module.js");
-/* harmony import */ var _ui_useImported__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../ui/useImported */ "./node_modules/react-imported-component/dist/es2015/ui/useImported.js");
-/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../utils/helpers */ "./node_modules/react-imported-component/dist/es2015/utils/helpers.js");
-/* harmony import */ var _utils_useClientPhase__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/useClientPhase */ "./node_modules/react-imported-component/dist/es2015/utils/useClientPhase.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_ui_HOC__WEBPACK_IMPORTED_MODULE_9__.default);
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/loadable/assignImportedComponents.js":
-/*!************************************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/loadable/assignImportedComponents.js ***!
-  \************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "assignImportedComponents": () => /* binding */ assignImportedComponents
-/* harmony export */ });
-/* harmony import */ var _configuration_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../configuration/config */ "./node_modules/react-imported-component/dist/es2015/configuration/config.js");
-/* harmony import */ var _metadata__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./metadata */ "./node_modules/react-imported-component/dist/es2015/loadable/metadata.js");
-/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pending */ "./node_modules/react-imported-component/dist/es2015/loadable/pending.js");
-/* harmony import */ var _registry__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registry */ "./node_modules/react-imported-component/dist/es2015/loadable/registry.js");
-/* harmony import */ var _toLoadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toLoadable */ "./node_modules/react-imported-component/dist/es2015/loadable/toLoadable.js");
-
-
-
-
-
-/**
- * to be used __only via CLI tools__
- */
-var assignImportedComponents = function (set) {
-    var countBefore = _registry__WEBPACK_IMPORTED_MODULE_0__.LOADABLE_SIGNATURE.size;
-    set.forEach(function (imported) {
-        var allowAutoLoad = !(imported[3] || !_configuration_config__WEBPACK_IMPORTED_MODULE_1__.settings.fileFilter(imported[2]));
-        var loadable = (0,_toLoadable__WEBPACK_IMPORTED_MODULE_2__.toLoadable)(imported[0], allowAutoLoad);
-        (0,_metadata__WEBPACK_IMPORTED_MODULE_3__.assignMetaData)(loadable.mark, loadable, imported[1], imported[2]);
-    });
-    if (set.length === 0) {
-        // tslint:disable-next-line:no-console
-        console.error('react-imported-component: no import-marks found, please check babel plugin');
-    }
-    if (countBefore === _registry__WEBPACK_IMPORTED_MODULE_0__.LOADABLE_SIGNATURE.size) {
-        // tslint:disable-next-line:no-console
-        console.error('react-imported-component: no new imports found');
-    }
-    (0,_pending__WEBPACK_IMPORTED_MODULE_4__.done)();
-    return set;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/loadable/loadByChunkName.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/loadable/loadByChunkName.js ***!
-  \***************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "loadByChunkname": () => /* binding */ loadByChunkname
-/* harmony export */ });
-/* harmony import */ var _metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./metadata */ "./node_modules/react-imported-component/dist/es2015/loadable/metadata.js");
-
-/**
- * loads chunk by a known chunkname
- * @param {String} chunkName
- */
-var loadByChunkname = function (chunkName) {
-    return Promise.all(_metadata__WEBPACK_IMPORTED_MODULE_0__.markMeta.filter(function (meta) { return meta.chunkName === chunkName; }).map(function (meta) { return meta.loadable.load(); }));
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/react-imported-component/dist/es2015/loadable/loadable.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/react-imported-component/dist/es2015/loadable/loadable.js ***!
@@ -57060,36 +56892,6 @@ function getLoadable(importFunction) {
  * @internal
  */
 var clearImportedCache = function () { return _registry__WEBPACK_IMPORTED_MODULE_1__.LOADABLE_SIGNATURE.clear(); };
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/loadable/markerMapper.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/loadable/markerMapper.js ***!
-  \************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getMarkedChunks": () => /* binding */ getMarkedChunks,
-/* harmony export */   "getMarkedFileNames": () => /* binding */ getMarkedFileNames
-/* harmony export */ });
-/* harmony import */ var _metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./metadata */ "./node_modules/react-imported-component/dist/es2015/loadable/metadata.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/react-imported-component/dist/es2015/loadable/utils.js");
-
-
-var getMarkedMeta = function (marks, mapping) {
-    if (_metadata__WEBPACK_IMPORTED_MODULE_0__.markMeta.length === 0) {
-        throw new Error('react-imported-component: no import meta-information found. Have you imported async-requires?');
-    }
-    return Array.from(new Set(_metadata__WEBPACK_IMPORTED_MODULE_0__.markMeta.filter(function (meta) { return (0,_utils__WEBPACK_IMPORTED_MODULE_1__.markerOverlap)(meta.mark, marks); })
-        .map(mapping)
-        .filter(Boolean)).values());
-};
-var getMarkedChunks = function (marks) { return getMarkedMeta(marks, function (meta) { return meta.chunkName; }); };
-var getMarkedFileNames = function (marks) { return getMarkedMeta(marks, function (meta) { return meta.fileName; }); };
 
 
 /***/ }),
@@ -57188,26 +56990,6 @@ var waitForMarks = function (marks) {
 var printDrainHydrateMarks = function (stream) {
     (0,_stream__WEBPACK_IMPORTED_MODULE_0__.checkStream)(stream);
     return "<script>window.___REACT_DEFERRED_COMPONENT_MARKS=" + JSON.stringify(drainHydrateMarks(stream)) + ";</script>";
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/loadable/metadata.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/loadable/metadata.js ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "markMeta": () => /* binding */ markMeta,
-/* harmony export */   "assignMetaData": () => /* binding */ assignMetaData
-/* harmony export */ });
-var markMeta = [];
-var assignMetaData = function (mark, loadable, chunkName, fileName) {
-    markMeta.push({ mark: mark, loadable: loadable, chunkName: chunkName, fileName: fileName });
 };
 
 
@@ -57754,60 +57536,6 @@ var LazyBoundary = _utils_detectBackend__WEBPACK_IMPORTED_MODULE_2__.isBackend ?
 
 /***/ }),
 
-/***/ "./node_modules/react-imported-component/dist/es2015/ui/Module.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/ui/Module.js ***!
-  \************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ImportedModule": () => /* binding */ ImportedModule,
-/* harmony export */   "importedModule": () => /* binding */ importedModule
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _loadable_loadable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../loadable/loadable */ "./node_modules/react-imported-component/dist/es2015/loadable/loadable.js");
-/* harmony import */ var _useImported__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useImported */ "./node_modules/react-imported-component/dist/es2015/ui/useImported.js");
-
-
-
-
-/**
- * @deprecated use {@link useImported} instead
- */
-function ImportedModule(props) {
-    var _a = (0,_useImported__WEBPACK_IMPORTED_MODULE_1__.useImported)(props.import), error = _a.error, loadable = _a.loadable, module = _a.imported;
-    if (error) {
-        throw error;
-    }
-    if (module) {
-        return props.children(module);
-    }
-    if (!props.fallback) {
-        throw loadable.resolution;
-    }
-    return props.fallback;
-}
-/**
- * @deprecated use {@link useImported} instead
- */
-function importedModule(loaderFunction) {
-    var loadable = (0,_loadable_loadable__WEBPACK_IMPORTED_MODULE_2__.getLoadable)(loaderFunction);
-    var Module = (function (props) { return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(ImportedModule, tslib__WEBPACK_IMPORTED_MODULE_3__.__assign({}, props, { import: loadable, fallback: props.fallback }))); });
-    Module.preload = function () {
-        loadable.load().catch(function () { return ({}); });
-        return loadable.resolution;
-    };
-    Module.done = loadable.resolution;
-    return Module;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/react-imported-component/dist/es2015/ui/context.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/react-imported-component/dist/es2015/ui/context.js ***!
@@ -58015,29 +57743,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var detect_node_es__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! detect-node-es */ "./node_modules/detect-node-es/esm/node.js");
 
 var isBackend = detect_node_es__WEBPACK_IMPORTED_MODULE_0__.isNode || typeof window === 'undefined';
-
-
-/***/ }),
-
-/***/ "./node_modules/react-imported-component/dist/es2015/utils/helpers.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/react-imported-component/dist/es2015/utils/helpers.js ***!
-  \****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "remapImports": () => /* binding */ remapImports
-/* harmony export */ });
-/**
- * helper function to remap imports
- * @param x
- * @param map
- */
-function remapImports(x, map) {
-    return x.then(map);
-}
 
 
 /***/ }),
