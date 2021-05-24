@@ -30663,7 +30663,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Landing(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", {
     style: {
       color: 'white',
       backgroundImage: `url(${_assets_background_jpg__WEBPACK_IMPORTED_MODULE_1__.default})`
@@ -30736,7 +30736,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Lazy() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "hoooooora lazy component v2");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "hoooooora lazy component v2");
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lazy);
